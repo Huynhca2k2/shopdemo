@@ -49,6 +49,7 @@ html {
     left: 0;
     display: flex;
     animation: fadeIn linear 0.1s;
+    z-index: 2;
 }
 
 .modal .modal-overlay{
@@ -186,4 +187,8 @@ html {
 
 .pagination-item-active.pagination-item-link:hover{
     background-color: #ed5c3f;
+}
+
+.display-none{
+    display: none;
 }

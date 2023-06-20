@@ -442,11 +442,18 @@
     font-weight: 400;
 }
 
+.img-container-login{
+    position: relative;
+    margin-top: 4px;
+}
+
+.position-ab{
+    position: absolute;
+    top: 160px;
+    right: 240px;
+}
+
 .container-login{
-    background-image: url('.../assets/img/banner/login.png');
-    background-position: center;/*điều chỉnh góc độ hình ảnh*/
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 600px;
     display: flex;
     align-items: center;

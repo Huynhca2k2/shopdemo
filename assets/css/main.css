@@ -12,6 +12,12 @@
     z-index: 1;
 }
 
+.header-login{
+    height: 84px;
+    background-image: var(--white-color);
+    position: relative;
+}
+
 .header .has-qr:hover .qr{
     display: block;
 }
@@ -34,9 +40,16 @@
 }
 
 .nav .nav-user{
-    display: flex;
     justify-items: center;
     position: relative;
+    align-items: center;
+}
+
+.nav .nav-user-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .nav .nav-user:hover .nav-user-menu{
@@ -55,6 +68,7 @@
     margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
+    line-height: 2.6rem ;
 }
 
 .nav .nav-user-menu{
@@ -402,6 +416,7 @@
     height: var(--search-height);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 8px;
 }
 
@@ -417,11 +432,43 @@
 }
 
 .header .logo{
-    width: 200px;
+    display: flex;
+    align-items: end;
+}
+
+.header-login-text{
+    line-height: 3.6rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.container-login{
+    background-image: url('/assets/img/banner/login.png');
+    background-position: center;/*điều chỉnh góc độ hình ảnh*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.login-text-right{
+    display: block;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .header .logo-img{
     width: 150px;
+    margin-right: 16px;
+}
+
+.header .logo-img-login{
+    width: 132px;
+    margin-right: 16px;
 }
 
 .header .logo-link{
@@ -801,7 +848,7 @@
 /* authen modal */
 
 .auth-form{
-    width: 500px;
+    width: 400px;
     background-color: var(--white-color);
     border-radius: 5px;
     overflow: hidden;
@@ -929,11 +976,11 @@
 
 .app-container{
     background-color: #f5f5f5;
+    border-radius: 2px;
 }
 
-.app-container{
-    background-color: #f5f5f5;
-    border-radius: 2px;
+.app-container-login{
+    background-color: #ee4d2d;
 }
 
 .app-container .category-item{
@@ -942,15 +989,6 @@
 
 .app-container .category-item:first-child::before{
     display: none;
-}
-
-.app-container .category-item::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    border-top: 1px solid #e1e1e1;
-    left: 20px;
-    right: 20px;
 }
 
 .app-container .category-heading{
@@ -1153,6 +1191,13 @@
 }
 
 /* product item */ 
+.watch-product{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+}
+
 .flash-sale{
     margin-top: 20px;
 }
@@ -1203,6 +1248,7 @@
     will-change: transform;
     display: block;
     text-decoration: none;
+    height: 96%;
 }
 
 .home-product .product-item:hover,
@@ -1389,6 +1435,13 @@
     padding-top: 12px;
 }
 
+.footer-description,
+.footer-category,
+.footer-content{
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
 .footer-heading{
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -1398,6 +1451,12 @@
 .footer-list{
     padding-left: 0;
     list-style: none;
+}
+
+.footer-item{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
 }
 
 .footer-item-link{

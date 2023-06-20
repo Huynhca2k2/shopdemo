@@ -443,7 +443,7 @@
 }
 
 .container-login{
-    background-image: url('../assets/img/banner/login.png');
+    background-image: url('.../assets/img/banner/login.png');
     background-position: center;/*điều chỉnh góc độ hình ảnh*/
     background-repeat: no-repeat;
     background-size: contain;

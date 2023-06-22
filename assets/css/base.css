@@ -161,3 +161,11 @@ html {
 .pagination-item-active.pagination-item-link:hover{
     background-color: #ed5c3f;
 }
+
+.border-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.border-right{
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}

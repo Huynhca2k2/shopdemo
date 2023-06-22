@@ -450,13 +450,17 @@
 .position-ab{
     position: absolute;
     top: 160px;
-    right: 240px;
+    right: 160px;
 }
 
 .container-login{
     height: 600px;
     display: flex;
     align-items: center;
+}
+
+.container-login-box{
+    justify-content: center;
 }
 
 .login-text-right{
@@ -1529,5 +1533,348 @@
 }
 .footer-heart-red{
     color: red;
+}
+
+/* product infomation */
+.prodinfo-link,
+.prodinfo-link-second{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #05a;
+}
+
+.prodinfo-link{
+    margin-bottom: 20px;
+}
+
+.prodinfo-link-icon{
+    font-size: 1rem;
+    color: #000;
+}
+
+.prodinfo-link-text{
+    color: #000;
+}
+
+.prodinfo-main-pict{
+    width: 100%;
+}
+
+.prodinfo-main-box,
+.product-detail-box,
+.product-detail{
+    padding: 20px;
+}
+
+.prodinfo-main-price,
+.prodinfo-color-box,
+.prodinfo-quantity-box{
+    display: flex;
+}
+
+.prodinfo-main-title{
+    font-size: 2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.prodinfo-main-info{
+    margin-left: 20px;
+}
+
+.prodinfo-main-staricon{
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.rating-text-1,
+.rating-text-2{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.rating-text-1{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.rating-text-2{
+    color: #767676;
+    margin-left: 20px;
+}
+
+.prodinfo-main-price{
+    height: 66px;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+.prodinfo-price-old{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #929292;
+    margin-left: 20px;
+}
+
+.prodinfo-price-new{
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 0 20px;
+}
+
+.prodinfo-sale-off{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: var(--white-color);
+    width: 68px;
+    height: 16px;
+    padding:0 4px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+}
+
+.prodinfo-main-price,
+.prodinfo-text-box,
+.prodinfo-buy-box,
+.discount-date{
+    margin-top: 28px;
+}
+
+.prodinfo-text-item,
+.prodinfo-quantity-text,
+.shopkeeper-real-time,
+.product-detail-menu{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #929292;
+}
+
+.prodinfo-protect-box,
+.prodinfo-transport,
+.prodinfo-transport-box,
+.shopkeeper-name,
+.shopkeeper-info-text,
+.product-detail-item{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.find-out-more{
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-left: 28px;
+}
+
+.prodinfo-transport-text,
+.shopkeeper-info-text,
+.product-other-title,
+.discount-date{
+    color: #636363;
+}
+
+.prodinfo-transport-icon{
+    font-size: 1.8rem;
+}
+
+.prodinfo-color{
+    width: 80px;
+    height: 32px;
+    border: 1px solid #ccc;
+    margin-right: 12px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.prodinfo-color-box{
+    align-items: center;
+}
+
+.line-height-center{
+    line-height: 3.2rem;
+}
+
+.prodinfo-quantity-btn,
+.prodinfo-quantity-btn-1{
+    height: 32px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.prodinfo-quantity-btn{
+    width: 32px;
+}
+
+.prodinfo-quantity-btn-1{
+    width: 48px;
+}
+
+.prodinfo-quantity-text{
+    margin-left: 24px;
+}
+
+.btn-addtocard,
+.btn-shopkeeper-chat,
+.discount-one{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #fff4f4;
+
+}
+
+.btn-buy-product{
+    width: 112px;
+}
+
+.btn-buy-product,
+.save-discount{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-buy-product,
+.btn-addtocard,
+.addtocard-icon{
+    height: 48px;
+    font-size: 1.8rem;
+}
+
+.btn-addtocard{
+    width: 218px;
+}
+
+.addtocard-icon{
+    margin-right: 6px;
+}
+
+.btn-addtocard{
+    margin-right: 24px;
+}
+
+/* shop keeper */
+.shopkeeper-info{
+    height: 134px;
+    background-color: var(--white-color);
+    margin-top: 20px;
+    align-items: center;
+}
+
+.shopkeeper-pict{
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.shopkeeper-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.shopkeeper-real-time{
+    margin: 4px 0 8px 0;
+}
+
+.btn-shopkeeper-chat,
+.btn-shopkeeper-watch{
+    width: 116px;
+    height: 32px;
+}
+
+.btn-shopkeeper-watch{
+    border: 1px solid rgba(0,0,0,.09);
+}
+
+.btn-shopkeeper-chat,
+.btn-shopkeeper-watch{
+    line-height: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-detail{
+    background-color: var(--white-color);
+    margin-top: 20px;
+}
+
+.product-detail-title,
+.product-desc-title,
+.product-other-title{
+    font-size: 2rem;
+    padding: 14px;
+    line-height: 2.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.product-detail-title,
+.product-desc-title{
+    height: 50px;
+    background: rgba(0,0,0,.02);
+}
+
+.desc-list-title{
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    margin: 16px;
+}
+
+.desc-item,
+.discount-text{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.discount-one{
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.discount-title{
+    width: 136px;
+    margin-right: 8px;
+    padding: 8px;
+}
+
+.save-discount{
+    width: 52px;
+    height: 32px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.product-discount{
+    padding: 10px;
+    background-color: var(--white-color);
+    margin-top: 20px;
 }
 

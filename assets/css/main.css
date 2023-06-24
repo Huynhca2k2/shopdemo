@@ -26,6 +26,11 @@
     justify-content: space-between;
 }
 
+.nav-box{
+    padding: 4px 0;
+    background-image: linear-gradient(0,#fe6433,#f53e2d);
+}
+
 .nav .nav-list {
     list-style: none;
     padding-left: 0;
@@ -64,11 +69,15 @@
     background-color: #ccc;
 }
 
+.nav .nav-icon-user{
+    font-size: 1.4rem;
+}
+
 .nav .nav-user-name{
     margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2.6rem ;
+    line-height: 2.2rem ;
 }
 
 .nav .nav-user-menu{
@@ -418,6 +427,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 8px;
+    
+}
+
+.search.search-pay{
+    border: 2px solid var(--primary-color);
 }
 
 .bars-overplay{
@@ -436,10 +450,17 @@
     align-items: end;
 }
 
-.header-login-text{
+.header-login-text,
+.header-pay-text{
     line-height: 3.6rem;
     font-size: 2.4rem;
     font-weight: 400;
+}
+
+.header-pay-text{
+    padding-left: 16px;
+    color: var(--primary-color);
+    border-left: 1px solid var(--primary-color);
 }
 
 .img-container-login{
@@ -477,7 +498,8 @@
     margin-right: 16px;
 }
 
-.header .logo-img-login{
+.logo-img-login,
+.login-img-pay{
     width: 132px;
     margin-right: 16px;
 }
@@ -1746,14 +1768,16 @@
 }
 
 .btn-buy-product,
-.save-discount{
+.save-discount,
+.btn-together-bill{
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
 .btn-buy-product,
 .btn-addtocard,
-.addtocard-icon{
+.addtocard-icon,
+.btn-together-bill{
     height: 48px;
     font-size: 1.8rem;
 }
@@ -1890,5 +1914,190 @@
     box-shadow: 0 1px 2px #e0e0e0;
     margin: 20px 0;
     color: #757575;
+}
+/* pay product */
+.category-col-item{
+    text-align: center;
+}
+
+.img-product-pay{
+    width: 80px;
+    height: 80px;
+}
+
+.category-col-item{
+    justify-content: center;
+}
+
+.pay-container{
+    padding-top: 24px;
+}
+
+.voucher-transport{
+    height: 42px;
+    background-color: #fffefb;
+    border: 1px solid rgba(224,168,0,.4);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+
+.voucher-transport-text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-left: 8px;
+}
+
+.voucher-transport-icon{
+    color: #00bfa5;
+    font-size: 1.6rem;
+}
+
+.category-col-list,
+.pay-together{ 
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    border-radius: 3px;
+    height: 55px;
+    font-size: 1.4rem;
+    background: #fff;
+    margin-bottom: 12px;
+    color: #888;
+    padding: 0 40px;
+}
+
+.col-item-first{
+    margin-left: 12px;
+    color: var(--text-color);
+}
+
+.shoper-title{
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.main-shoper{
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    background: #fff;
+    overflow: visible;
+}
+
+.shoper-name{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.shoper-title-icon,
+.shoper-title-icon-chat,
+.product-pay-name,
+.voucher-gift-icon{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0 12px;
+}
+
+.shoper-title-icon-chat,
+.voucher-gift-icon{
+    color: var(--primary-color);
+}
+
+.shoper-product{
+    color: rgba(0,0,0,.87);
+    padding:20px 40px 20px;
+    align-items: center;
+}
+
+.product-pay{
+    display: flex;
+}
+
+.img-product-pay{
+    margin-left: 12px;
+}
+
+.product-pay-name{
+    margin-top: 12px;
+}
+
+.shoper-product .classify{
+    color: #888;
+}
+
+.shoper-product .classify,
+.shoper-product .col-price,
+.col-price-total,
+.col-setting-del,
+.voucher-gift-text,
+.voucher-gift-text-link{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.shoper-product .col-price,
+.col-setting-del{
+    color: var(--text-color);
+}
+
+.col-setting-del:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.col-price-total {
+    color: var(--primary-color);
+}
+
+.voucher-gift{
+    height: 60px;
+    background-color: var(--white-color);
+    padding: 16px 0 16px 24px;
+    border-top: 1px solid rgba(0,0,0,.09);
+}
+
+.voucher-gift-text-link{
+    color: #05a;
+    margin-left: 20px;
+}
+
+.pay-together{
+    margin-top: 20px;
+}
+
+.pay-together-text{
+    color: var(--text-color);
+    margin-right: 32px;
+}
+
+.pay-total-text{
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: var(--primary-color);
+}
+
+.pay-together-all{
+    color: #000;
+    margin-right: 12px;
+}
+
+.btn-together-bill{
+    width: 210px;
+    height: 40px;
+    margin-left: 24px;
 }
 

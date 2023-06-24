@@ -169,3 +169,8 @@ html {
 .border-right{
     border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+.header.backcolor-white{
+    background-image: var(--white-color);
+    position: relative;
+}

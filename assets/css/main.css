@@ -1081,17 +1081,27 @@
 }
 
 .home-filter{
+    background-color: #ededed;
+}
+
+.home-filter,
+.home-filter-text{
     height: 60px;
     padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.home-filter-text{
     border-bottom: 4px solid var(--primary-color);
 }
 
-.home-filter .filter-lable{
+.home-filter .filter-lable,
+.home-filter-text{
     font-size: 1.8rem;
     color:var(--primary-color);
+    margin-right: 12px;
 }
 
 .home-filter .filter-btn{
@@ -1150,7 +1160,7 @@
 }
 /* banner-container */
 .banner-area{
-    padding-top: 146px;
+    margin-top: 146px;
 }
 
 .banner-item:hover{
@@ -1183,6 +1193,8 @@
 }
 
 .category-item{
+    display: block;
+    text-decoration: none;
     height: 50%;
     border: 1px solid rgba(0,0,0,.05);
 }
